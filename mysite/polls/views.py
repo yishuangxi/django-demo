@@ -5,7 +5,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def index(request):
-    return HttpResponse("hello world")
+    return HttpResponse({"name":"lifeng", "age":33})
 
 def detail(request):
     return HttpResponse("Detail")
